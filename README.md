@@ -1,19 +1,32 @@
-# Notas:
+# Twittor:
+A hero chat simulator. Using the characteristics of a PWA like:
+- Location
+- Camera
+- PUSH notifications
 
-Este es un pequeño servidor de express listo para ejecutarse y servir la carpeta public en la web.
+It also has cache strategies using PouchDB and data synchronization when there is no connection.
 
-Recuerden que deben de reconstruir los módulos de node con el comando
-
+Clone the project and remember that you must rebuild the node modules with the command:
 ```
 npm install
 ```
 
-Luego, para correr en producción
+Then, for run in production:
 ```
-npm start
+npm run start
 ```
 
-Para correr en desarrollo
+For run in dev environment:
 ```
 npm run dev
+```
+
+If you use docker run this for create an image from Dockerfile file that there is in the root project:
+```
+docker build -t pwatest .
+```
+
+Then run a container, run:
+```
+docker run -d -p 3000:3000 pwatest
 ```
